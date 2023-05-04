@@ -5,11 +5,13 @@
 while(1):
     
     cadena = str(input("Ingrese un texto : "))
-    cadena = cadena.split()[0]
-    
-    if(cadena[1] == cadena[1].upper()):
-        print("En la primera palabra SI hay una mayuscula en la segunda posicion.")
-    else:
-        print("En la primera palabra NO hay una mayuscula en la segunda posicion.")
-    print()
+    if(len(cadena) > 0 ):
+        
+        cadena = cadena.split()[0]
+        
+        if(cadena[1] == cadena[1].upper()):
+            print("En la primera palabra SI hay una mayuscula en la segunda posicion.")
+        else:
+            print("En la primera palabra NO hay una mayuscula en la segunda posicion.")
+        print()
 

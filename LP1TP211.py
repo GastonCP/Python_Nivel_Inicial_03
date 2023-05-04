@@ -4,16 +4,17 @@
 while(1):
     
     cadena = str(input("Ingrese un texto : "))
-    cadena = cadena.lower()
-    cantidadDePalabras = len(cadena.split())
+    if(len(cadena) > 0 ):
+        cadena = cadena.lower()
+        cantidadDePalabras = len(cadena.split())
 
-    contadorE = 0
-    for i in range (cantidadDePalabras):
-        if( "e" in cadena.split()[i]):
-            contadorE = contadorE + 1
+        contadorE = 0
+        for i in range (cantidadDePalabras):
+            if( "e" in cadena.split()[i]):
+                contadorE = contadorE + 1
 
-    if(contadorE == cantidadDePalabras):
-        print("En las", cantidadDePalabras, "palabras SI estan presntes las E.")
-    else:
-        print("En las", cantidadDePalabras, "palabras NO estan presntes las E.")
-    print()
+        if(contadorE == cantidadDePalabras):
+            print("En las", cantidadDePalabras, "palabras SI estan presntes las E.")
+        else:
+            print("En las", cantidadDePalabras, "palabras NO estan presntes las E.")
+        print()

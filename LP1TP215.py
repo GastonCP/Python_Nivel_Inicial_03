@@ -4,15 +4,16 @@
 while(1):
     
     cadena = str(input("Ingrese un texto : "))
-    cadena = cadena.split()[0]
+    if(len(cadena) > 0 ):
+        cadena = cadena.split()[0]
 
-    contadorDeMinusculas = 0
-    for i in range (len(cadena)):  
-        if( cadena[i]== cadena[i].lower()):
-            contadorDeMinusculas = contadorDeMinusculas + 1
+        contadorDeMinusculas = 0
+        for i in range (len(cadena)):  
+            if( cadena[i]== cadena[i].lower()):
+                contadorDeMinusculas = contadorDeMinusculas + 1
 
-    if(contadorDeMinusculas > 0):
-        print("El texto ingresado SI tiene minusculas (",contadorDeMinusculas,").")
-    else:
-        print("El texto ingresado NO tiene minusculas.")
-    print()
+        if(contadorDeMinusculas > 0):
+            print("El texto ingresado SI tiene minusculas (",contadorDeMinusculas,").")
+        else:
+            print("El texto ingresado NO tiene minusculas.")
+        print()

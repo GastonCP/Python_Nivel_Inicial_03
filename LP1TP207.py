@@ -3,11 +3,12 @@
 
 while(1):
     cadena = str(input("Ingrese un texto : "))
-    cadena = cadena.lower()
-    cadena = cadena.split()[0]
+    if(len(cadena) > 0 ):
+        cadena = cadena.lower()
+        cadena = cadena.split()[0]
 
-    if(cadena[2] == "o"):
-        print("SI contiene O en la tercera posicion")
-    else:
-        print("NO contiene O en la tercera posicion")
-    print()
+        if(cadena[2] == "o"):
+            print("SI contiene O en la tercera posicion")
+        else:
+            print("NO contiene O en la tercera posicion")
+        print()
